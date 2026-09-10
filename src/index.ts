@@ -17,6 +17,7 @@ import { calculateResourceLimits } from './services/resource-calculator';
 
 // Injection
 import { injectEventPrompts } from './injection/event-prompts';
+import { injectExperiencePrompts } from './injection/experience-prompts';
 import { injectGameInfo } from './injection/game-info';
 import { injectLevelPrompts } from './injection/level-prompts';
 
@@ -153,6 +154,7 @@ const injectAllPrompts = (): void => {
   const variables = getVariables({ type: 'message', message_id: -2 }) as MessageVariables;
 
   injectGameInfo(variables);
+  injectExperiencePrompts(variables);
   injectEventPrompts(variables);
   injectLevelPrompts(variables);
 };

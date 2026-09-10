@@ -12,6 +12,7 @@ const InjectIdsToRemove = [
   '当前所在地点',
   '当前时间',
   '事件提示',
+  '性经验',
 ] as const;
 
 /**
