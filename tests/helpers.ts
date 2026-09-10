@@ -15,7 +15,6 @@ export const buildVariables = (overrides: DeepPartial<MessageVariables> = {}): M
         等级: 1,
         累计经验值: 0,
         升级所需经验: 120,
-        冒险者等级: '',
         生命值: { 当前: 0, 上限: { _基础: 0, 额外: 0 } },
         法力值: { 当前: 0, 上限: { _基础: 0, 额外: 0 } },
         体力值: { 当前: 0, 上限: { _基础: 0, 额外: 0 } },
